@@ -2,3 +2,4 @@
 /docker-php/
 /vendor/
 /.idea/
+docker-compose.yml
