@@ -1,0 +1,29 @@
+{
+  "name": "meganebu",
+  "authors": [
+    {
+      "name": "matsumaru",
+      "email": "mattun@meganebu.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    }
+  ],
+  "require": {
+    "php": "~7.3.3",
+    "ext-imagick": "*",
+    "ext-gd": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Acme": "src/"
+    }
+  }
+}
