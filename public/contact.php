@@ -57,7 +57,7 @@
 					$bad = array("content-type","bcc:","to:","cc:","href");
 					return str_replace($bad,"",$string);
 				}
-				
+
 				$email_message .= "Name: ".clean_string($first_name)."\n";
 				$email_message .= "Email Address: ".clean_string($email_from)."\n";
 				$email_message .= "Subject: ".clean_string($subject)."\n";
@@ -65,13 +65,31 @@
 
 
                 require '../vendor/autoload.php'; // If you're using Composer (recommended)
+
+                var_dump(getenv('SENDGRID_API_KEY'));
+
+                $apiKey = getenv('SENDGRID_API_KEY');
+                $sg = new \SendGrid($apiKey);
+
+                try {
+                    $response = $sg->client->suppression()->bounces()->get();
+                    print $response->statusCode() . "\n";
+                    print_r($response->headers());
+                    print $response->body() . "\n";
+                } catch (Exception $e) {
+                    echo 'Caught exception: '.  $e->getMessage(). "\n";
+                }
+
+                
+
                 $email = new \SendGrid\Mail\Mail();
                 $email->setFrom($_POST['email']);
                 $email->setSubject("FORM MESSAGE ON MEGANEBU");
                 $email->addTo("mattun@meganebu.com");
                 $email->addContent("text/plain", $email_message);
 
-                $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+
+                $sendgrid = new \SendGrid($apiKey);
                 try {
                     $response = $sendgrid->send($email);
                     print $response->statusCode() . "\n";
