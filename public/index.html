@@ -2044,40 +2044,38 @@
 
 
 		<!-- Google Map -->
-		<script src="https://maps.google.com/maps/api/js?key=AIzaSyAG671agrA-zEzmBXgjs-kPBzau1rbhhxA&callback=initMap"></script>
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyAG671agrA-zEzmBXgjs-kPBzau1rbhhxA"></script>
 		<script src="js/jquery.gmap3.min.js"></script>
 		<!-- Google Map Init-->
 		<script type="text/javascript">
 			jQuery(function($){
-				function initMap() {
-					$('#map_canvas').gmap3({
-						marker: {
-							address: '35.5326101,139.4914685',
-							options: {icon: "img/icons/map-marker.png"}
-						},
-						map: {
-							options: {
-								zoom: 16,
-								scrollwheel: false,
-								streetViewControl: true,
-								styles: [{
-									featureType: "all",
-									stylers: [
-										{saturation: -100}
-									]
-								}, {
-									featureType: "road.arterial",
-									elementType: "geometry",
-									stylers: [
-										{hue: "#000000"},
-										{saturation: -100}
-									]
-								}
-								],
-							}
-						}
-					});
-				}
+				$('#map_canvas').gmap3({
+					marker:{
+						address: '35.5326101,139.4914685',
+						options:{ icon: "img/icons/map-marker.png"}
+					},
+						map:{
+						options:{
+						zoom: 16,
+						scrollwheel: false,
+						streetViewControl : true,
+						styles: [{
+								featureType: "all",
+								stylers: [
+								  { saturation: -100 }
+								]
+							  },{
+								featureType: "road.arterial",
+								elementType: "geometry",
+								stylers: [
+								   { hue: "#000000" },
+								   { saturation: -100 }
+										  ]
+								 }
+							   ],
+						     }
+					       }
+				});
 			});
 		</script>
 
