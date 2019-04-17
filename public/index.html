@@ -2049,33 +2049,35 @@
 		<!-- Google Map Init-->
 		<script type="text/javascript">
 			jQuery(function($){
-				$('#map_canvas').gmap3({
-					marker:{
-						address: '35.5326101,139.4914685',
-						options:{ icon: "img/icons/map-marker.png"}
-					},
-						map:{
-						options:{
-						zoom: 16,
-						scrollwheel: false,
-						streetViewControl : true,
-						styles: [{
-								featureType: "all",
-								stylers: [
-								  { saturation: -100 }
-								]
-							  },{
-								featureType: "road.arterial",
-								elementType: "geometry",
-								stylers: [
-								   { hue: "#000000" },
-								   { saturation: -100 }
-										  ]
-								 }
-							   ],
-						     }
-					       }
-				});
+				function initMap() {
+					$('#map_canvas').gmap3({
+						marker: {
+							address: '35.5326101,139.4914685',
+							options: {icon: "img/icons/map-marker.png"}
+						},
+						map: {
+							options: {
+								zoom: 16,
+								scrollwheel: false,
+								streetViewControl: true,
+								styles: [{
+									featureType: "all",
+									stylers: [
+										{saturation: -100}
+									]
+								}, {
+									featureType: "road.arterial",
+									elementType: "geometry",
+									stylers: [
+										{hue: "#000000"},
+										{saturation: -100}
+									]
+								}
+								],
+							}
+						}
+					});
+				}
 			});
 		</script>
 
