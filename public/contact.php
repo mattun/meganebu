@@ -44,9 +44,7 @@
 				// EDIT THE 2 LINES BELOW AS REQUIRED
 
 				$email_to = "mattun@meganebu.com";
-
 				$email_subject = "FORM MESSAGE ON MEGANEBU";
-
 
 				$first_name = $_POST['first_name']; // required
 				$email_from = $_POST['email']; // required
@@ -55,29 +53,33 @@
 
 				$email_message = "Form details below.\n\n";
 
-
 				function clean_string($string) {
 					$bad = array("content-type","bcc:","to:","cc:","href");
 					return str_replace($bad,"",$string);
 				}
-
-
+				
 				$email_message .= "Name: ".clean_string($first_name)."\n";
 				$email_message .= "Email Address: ".clean_string($email_from)."\n";
 				$email_message .= "Subject: ".clean_string($subject)."\n";
 				$email_message .= "Message: ".clean_string($comments)."\n";
 
 
-				// create email headers
+                require '../vendor/autoload.php'; // If you're using Composer (recommended)
+                $email = new \SendGrid\Mail\Mail();
+                $email->setFrom($_POST['email']);
+                $email->setSubject("FORM MESSAGE ON MEGANEBU");
+                $email->addTo("mattun@meganebu.com");
+                $email->addContent("text/plain", $email_message);
 
-				$headers = 'From: '.$email_from."\r\n".
-
-				'Reply-To: '.$email_from."\r\n" .
-
-				'X-Mailer: PHP/' . phpversion();
-
-				@mail($email_to, $email_subject, $email_message, $headers);
-
+                $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+                try {
+                    $response = $sendgrid->send($email);
+                    print $response->statusCode() . "\n";
+                    print_r($response->headers());
+                    print $response->body() . "\n";
+                } catch (Exception $e) {
+                    echo 'Caught exception: '. $e->getMessage() ."\n";
+                }
 				?>
 
 				<!-- Message sent! (change the text below as you wish)-->
