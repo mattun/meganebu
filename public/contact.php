@@ -66,20 +66,8 @@
 
                 require '../vendor/autoload.php'; // If you're using Composer (recommended)
 
-                var_dump(getenv('SENDGRID_API_KEY'));
 
                 $apiKey = getenv('SENDGRID_API_KEY');
-                $sg = new \SendGrid($apiKey);
-
-                try {
-                    $response = $sg->client->suppression()->bounces()->get();
-                    print $response->statusCode() . "\n";
-                    print_r($response->headers());
-                    print $response->body() . "\n";
-                } catch (Exception $e) {
-                    echo 'Caught exception: '.  $e->getMessage(). "\n";
-                }
-
                 
 
                 $email = new \SendGrid\Mail\Mail();
