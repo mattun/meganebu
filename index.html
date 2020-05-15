@@ -5,25 +5,28 @@
         body {
             background: #d51719;
         }
-        p{
-            position: relative;
-            width: 100px;
-            height: 100px;
-
+        .container {
+            border: 2px solid #1b0303;
+            box-sizing: border-box;
+            width: 100%;
+            height: 300px;
         }
-        img{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            margin: auto;
+
+        .box {
+            background-color: #f53838;
+            width: 300px;
+            height: 200px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-<div class="parent">
-    <p><img src="logo.jpg"></p>
+<div class="container">
+    <div class="box"><img src="logo.jpg"></div>
 </div>
 </body>
 </html>
