@@ -2,21 +2,22 @@
 <head>
     <title>アバウトに生きろ！有限会社めがね部</title>
     <style>
-        .parent {
-            /*親要素*/
-            position: relative;
-            background: orange;
-            height: 200px;
+        body {
+            background: #d51719;
         }
-
-        .parent p {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform : translate(-50%,-50%);
-            transform : translate(-50%,-50%);
+        p{
+            position: relative;
             width: 100px;
-            text-align: center;/*一応BOX内の文字も中央寄せ*/
+            height: 100px;
+
+        }
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
         }
     </style>
 </head>
