@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd" date="2021-07-26" time="13:54:40" version="1.2" language="Japanese" readOnly="false">
+  <Units>
+    <Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="HPA"></Metric>
+  </Units>
+  <Project name="2021-07-26 created"></Project>
+  <Application name="GeoForm" manufacturer="ISP" version="5.21AA" manufacturerURL="www.ispland.co.jp"></Application>
+  <Surfaces>
+    <Surface name="">
+      <Definition surfType="TIN">
+        <Pnts>
+          <P id="1" name="gl0725-1">-100177.2110 60753.6720 2.825</P>
+          <P id="2" name="gl0725-2">-100180.4890 60755.9880 3.639</P>
+          <P id="3" name="gl0725-3">-100181.4610 60756.8710 3.242</P>
+          <P id="4" name="gl0725-4">-100182.7460 60755.0830 3.095</P>
+          <P id="5" name="gl0725-5">-100181.6430 60753.9710 3.696</P>
+          <P id="6" name="gl0725-6">-100179.2340 60751.8600 2.954</P>
+          <P id="7" name="gl0725-7">-100177.0310 60746.8330 2.984</P>
+          <P id="8" name="gl0725-8">-100172.3710 60743.3510 2.627</P>
+          <P id="9" name="gl0725-9">-100169.8570 60750.4590 2.347</P>
+          <P id="10" name="gl0725-1">-100171.0870 60753.9290 2.839</P>
+          <P id="11" name="gl0725-1">-100174.4780 60760.5320 2.766</P>
+          <P id="12">-100171.5679 60755.7592 3.240</P>
+          <P id="13">-100173.3559 60757.0442 3.100</P>
+          <P id="14">-100174.4679 60755.9412 3.700</P>
+          <P id="15">-100172.4509 60754.7872 3.640</P>
+          <P id="16">-100174.7669 60751.5092 2.830</P>
+          <P id="17">-100175.5243 60757.0061 2.950</P>
+          <P id="18">-100173.8067 60757.4986 2.780</P>
+          <P id="19">-100171.2519 60753.6979 2.830</P>
+          <P id="20">-100170.9892 60755.0224 2.830</P>
+          <P id="21">-100176.9170 60753.1464 2.830</P>
+        </Pnts>
+        <Faces>
+          <F>7 4 5</F>
+          <F>4 3 2</F>
+          <F>3 11 17</F>
+          <F>11 12 13</F>
+          <F>12 20 15</F>
+          <F>20 10 15</F>
+          <F>10 9 19</F>
+          <F>9 8 7</F>
+          <F>7 5 6</F>
+          <F>5 4 2</F>
+          <F>2 3 17</F>
+          <F>17 11 18</F>
+          <F>11 13 18</F>
+          <F>13 12 15</F>
+          <F>15 10 19</F>
+          <F>19 9 16</F>
+          <F>9 7 16</F>
+          <F>7 6 16</F>
+          <F>6 5 2</F>
+          <F>2 17 1</F>
+          <F>17 18 14</F>
+          <F>18 13 14</F>
+          <F>13 15 14</F>
+          <F>15 19 16</F>
+          <F>16 6 21</F>
+          <F>6 2 1</F>
+          <F>1 17 21</F>
+          <F>17 14 21</F>
+          <F>14 15 16</F>
+          <F>16 21 14</F>
+          <F>21 6 1</F>
+        </Faces>
+      </Definition>
+    </Surface>
+  </Surfaces>
+  <CgPoints>
+    <CgPoint name="gl0725-1">-100177.2110 60753.6720 2.825</CgPoint>
+    <CgPoint name="gl0725-2">-100180.4890 60755.9880 3.639</CgPoint>
+    <CgPoint name="gl0725-3">-100181.4610 60756.8710 3.242</CgPoint>
+    <CgPoint name="gl0725-4">-100182.7460 60755.0830 3.095</CgPoint>
+    <CgPoint name="gl0725-5">-100181.6430 60753.9710 3.696</CgPoint>
+    <CgPoint name="gl0725-6">-100179.2340 60751.8600 2.954</CgPoint>
+    <CgPoint name="gl0725-7">-100177.0310 60746.8330 2.984</CgPoint>
+    <CgPoint name="gl0725-8">-100172.3710 60743.3510 2.627</CgPoint>
+    <CgPoint name="gl0725-9">-100169.8570 60750.4590 2.347</CgPoint>
+    <CgPoint name="gl0725-1">-100171.0870 60753.9290 2.839</CgPoint>
+    <CgPoint name="gl0725-1">-100174.4780 60760.5320 2.766</CgPoint>
+    <CgPoint>-100171.5679 60755.7592 3.240</CgPoint>
+    <CgPoint>-100173.3559 60757.0442 3.100</CgPoint>
+    <CgPoint>-100174.4679 60755.9412 3.700</CgPoint>
+    <CgPoint>-100172.4509 60754.7872 3.640</CgPoint>
+    <CgPoint>-100174.7669 60751.5092 2.830</CgPoint>
+    <CgPoint>-100175.5243 60757.0061 2.950</CgPoint>
+    <CgPoint>-100173.8067 60757.4986 2.780</CgPoint>
+    <CgPoint>-100171.2519 60753.6979 2.830</CgPoint>
+    <CgPoint>-100170.9892 60755.0224 2.830</CgPoint>
+    <CgPoint>-100176.9170 60753.1464 2.830</CgPoint>
+  </CgPoints>
+</LandXML>
