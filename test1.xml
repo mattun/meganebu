@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd" date="2021-10-12" time="16:19:13" version="1.2" language="Japanese" readOnly="false">
+  <Units>
+    <Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="HPA"></Metric>
+  </Units>
+  <Project name="2021-10-12 created"></Project>
+  <Application name="GeoForm" manufacturer="ISP" version="5.21AA" manufacturerURL="www.ispland.co.jp"></Application>
+  <Surfaces>
+    <Surface name="">
+      <Definition surfType="TIN">
+        <Pnts>
+          <P id="1" name="1">-94998.1690 47155.3490 80.932</P>
+          <P id="2" name="2">-95001.2150 47155.4330 80.924</P>
+          <P id="3" name="3">-95001.3120 47152.3480 80.907</P>
+          <P id="4" name="4">-94998.2750 47152.2600 80.910</P>
+          <P id="5" name="5">-94998.6860 47154.8631 81.932</P>
+          <P id="6" name="6">-94998.7577 47152.7742 81.910</P>
+          <P id="7" name="7">-95000.7965 47152.8333 81.907</P>
+          <P id="8" name="8">-95000.7309 47154.9195 81.924</P>
+        </Pnts>
+        <Faces>
+          <F>4 3 6</F>
+          <F>3 2 7</F>
+          <F>2 1 8</F>
+          <F>1 4 5</F>
+          <F>4 6 5</F>
+          <F>6 3 7</F>
+          <F>7 2 8</F>
+          <F>8 1 5</F>
+          <F>5 6 8</F>
+          <F>6 7 8</F>
+        </Faces>
+      </Definition>
+    </Surface>
+  </Surfaces>
+  <CgPoints>
+    <CgPoint name="1">-94998.1690 47155.3490 80.932</CgPoint>
+    <CgPoint name="2">-95001.2150 47155.4330 80.924</CgPoint>
+    <CgPoint name="3">-95001.3120 47152.3480 80.907</CgPoint>
+    <CgPoint name="4">-94998.2750 47152.2600 80.910</CgPoint>
+    <CgPoint name="5">-94998.6860 47154.8631 81.932</CgPoint>
+    <CgPoint name="6">-94998.7577 47152.7742 81.910</CgPoint>
+    <CgPoint name="7">-95000.7965 47152.8333 81.907</CgPoint>
+    <CgPoint name="8">-95000.7309 47154.9195 81.924</CgPoint>
+  </CgPoints>
+</LandXML>
