@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LandXML xmlns="http://www.landxml.org/schema/LandXML-1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.org/schema/LandXML-1.2 http://www.landxml.org/schema/LandXML-1.2/LandXML-1.2.xsd" date="2021-10-15" time="10:54:21" version="1.2" language="Japanese" readOnly="false">
+  <Units>
+    <Metric areaUnit="squareMeter" linearUnit="meter" volumeUnit="cubicMeter" temperatureUnit="celsius" pressureUnit="HPA"></Metric>
+  </Units>
+  <Project name="2021-10-15 created"></Project>
+  <Application name="GeoForm" manufacturer="ISP" version="5.21AA" manufacturerURL="www.ispland.co.jp"></Application>
+  <Surfaces>
+    <Surface name="">
+      <Definition surfType="TIN">
+        <Pnts>
+          <P id="1" name="4">-94998.2750 47152.2600 80.910</P>
+          <P id="2" name="3">-95001.3120 47152.3480 80.907</P>
+          <P id="3" name="6">-94998.7580 47152.7740 81.910</P>
+          <P id="4" name="7">-95000.7960 47152.8330 81.907</P>
+          <P id="5" name="5">-94998.6860 47154.8630 81.932</P>
+          <P id="6" name="8">-95000.7310 47154.9200 81.924</P>
+          <P id="7" name="1">-94998.1690 47155.3490 80.932</P>
+          <P id="8" name="2">-95001.2150 47155.4330 80.924</P>
+          <P id="9">-94997.0940 47168.3260 81.043</P>
+          <P id="10">-94995.4860 47169.1990 81.113</P>
+          <P id="11">-94995.4750 47172.5800 81.443</P>
+          <P id="12">-94994.1030 47172.6700 81.054</P>
+          <P id="13">-94995.2320 47176.8420 81.824</P>
+          <P id="14">-94993.5420 47176.9160 81.074</P>
+          <P id="15">-94996.8530 47177.0180 81.941</P>
+          <P id="16">-94993.4630 47180.0670 81.260</P>
+          <P id="17">-94993.2080 47183.0300 81.490</P>
+          <P id="18">-94994.7840 47184.6470 82.702</P>
+          <P id="19">-94996.5710 47186.0140 82.875</P>
+          <P id="20">-94998.1790 47155.3493 80.932</P>
+          <P id="21">-94997.0852 47168.3308 81.043</P>
+        </Pnts>
+        <Faces>
+          <F>1 2 4</F>
+          <F>2 8 4</F>
+          <F>8 20 6</F>
+          <F>20 9 7</F>
+          <F>9 15 11</F>
+          <F>15 19 18</F>
+          <F>18 17 16</F>
+          <F>16 14 13</F>
+          <F>14 12 13</F>
+          <F>12 10 11</F>
+          <F>10 21 11</F>
+          <F>21 7 9</F>
+          <F>7 1 5</F>
+          <F>1 4 3</F>
+          <F>4 8 6</F>
+          <F>6 20 5</F>
+          <F>20 7 5</F>
+          <F>9 11 21</F>
+          <F>11 15 13</F>
+          <F>15 18 13</F>
+          <F>18 16 13</F>
+          <F>13 12 11</F>
+          <F>5 1 3</F>
+          <F>3 4 6</F>
+          <F>6 5 3</F>
+        </Faces>
+      </Definition>
+    </Surface>
+  </Surfaces>
+  <CgPoints>
+    <CgPoint name="4">-94998.2750 47152.2600 80.910</CgPoint>
+    <CgPoint name="3">-95001.3120 47152.3480 80.907</CgPoint>
+    <CgPoint name="6">-94998.7580 47152.7740 81.910</CgPoint>
+    <CgPoint name="7">-95000.7960 47152.8330 81.907</CgPoint>
+    <CgPoint name="5">-94998.6860 47154.8630 81.932</CgPoint>
+    <CgPoint name="8">-95000.7310 47154.9200 81.924</CgPoint>
+    <CgPoint name="1">-94998.1690 47155.3490 80.932</CgPoint>
+    <CgPoint name="2">-95001.2150 47155.4330 80.924</CgPoint>
+    <CgPoint>-94997.0940 47168.3260 81.043</CgPoint>
+    <CgPoint>-94995.4860 47169.1990 81.113</CgPoint>
+    <CgPoint>-94995.4750 47172.5800 81.443</CgPoint>
+    <CgPoint>-94994.1030 47172.6700 81.054</CgPoint>
+    <CgPoint>-94995.2320 47176.8420 81.824</CgPoint>
+    <CgPoint>-94993.5420 47176.9160 81.074</CgPoint>
+    <CgPoint>-94996.8530 47177.0180 81.941</CgPoint>
+    <CgPoint>-94993.4630 47180.0670 81.260</CgPoint>
+    <CgPoint>-94993.2080 47183.0300 81.490</CgPoint>
+    <CgPoint>-94994.7840 47184.6470 82.702</CgPoint>
+    <CgPoint>-94996.5710 47186.0140 82.875</CgPoint>
+    <CgPoint>-94998.1790 47155.3493 80.932</CgPoint>
+    <CgPoint>-94997.0852 47168.3308 81.043</CgPoint>
+  </CgPoints>
+</LandXML>
